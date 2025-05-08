@@ -3,7 +3,7 @@
 This repository contains a Nextflow DSL2 pipeline for processing single-cell ATAC-seq data using SnapATAC2. The workflow comprises two main steps:
 
 1. Per-fragment preprocessing to generate individual fragment-level AnnData files (.h5ad).
-2. Peak calling and concatenation of all fragment-level datasets into a combined AnnData object and peak-count matrix.
+2. Peak calling (mac3) and concatenation of all fragment-level datasets into a combined snapatac2 compatible AnnDataSet object and a peak-count matrix.
 
 ---
 
