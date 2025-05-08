@@ -1,0 +1,14 @@
+# params.yml
+# Paths for I/O and scripts
+script_dir: "/lustre/scratch126/cellgen/team205/abf/new_atac_samples/"
+workdir: "/lustre/scratch126/cellgen/team205/abf/new_atac_samples/data/"
+
+# Where to publish intermediate files
+snapatac_dir: "/lustre/scratch126/cellgen/team205/abf/new_atac_samples/snapatac2_files"
+
+# Filenames for the final outputs
+concated_filename: "concated.h5ads"
+peakmat_filename: "peakmat.h5ad"
+
+# The list of sample‐names (one per line)
+atac_names_file: "/lustre/scratch126/cellgen/team205/abf/new_atac_samples/atac_names.txt"

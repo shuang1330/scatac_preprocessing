@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+.nextflow.log
+.nextflow.log*
+.nextflow/*
+atac_names.txt
+data/*
+work/*
