@@ -3,10 +3,10 @@ nextflow.enable.dsl = 2
 
 
 // params.rpath = "/software/isg/languages/R/4.4.0/exec/bin/Rscript"
-params.sample_list_path = "./data/snapatac2_files.csv"
+params.sample_list_path = "./data/test_snapatac2_files.csv"
 
 process archr_per_sample {
-
+    label "archr"
     publishDir "arrowfiles", mode: 'copy'
 
     input:

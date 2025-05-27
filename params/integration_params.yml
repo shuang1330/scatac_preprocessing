@@ -1,0 +1,11 @@
+
+
+params_dic:
+  filter_ratio: 0.1
+  batch_key: "kit"
+  categorical_covariates_keys: 
+  - "sample"
+  - "site"
+  continuous_covariates_keys: 
+  - "MTperc"
+  - "total_counts"
