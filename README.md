@@ -35,6 +35,7 @@ This repository contains a Nextflow DSL2 pipeline for processing single-cell ATA
 
 ```
 ├── main.nf                   # Nextflow DSL2 pipeline script
+├── run_archr.nf                   # running archr scripts
 ├── params.config            # (Optional) Default parameter file
 ├── scripts/                 # Helper Python scripts
 │   ├── snapatac2_per_fragment.py
