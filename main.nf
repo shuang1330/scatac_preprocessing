@@ -2,9 +2,9 @@
 nextflow.enable.dsl=2
 
 // Parameters must be declared at the top
-params.concated_path     = "./concated.h5ads"
-params.peakmat_path      = "./peakmat.h5ad"
-params.atac_names_file   = "./atac_names.txt"
+params.concated_path     = "./data/concated.h5ads"
+params.peakmat_path      = "./data/peakmat.h5ad"
+params.atac_names_file   = "./data/snapatac2_files.csv"
 params.fragments_dir = "./data/fragment_files"
 params.snapatac_dir = "./data/snapatac2_files"
 
