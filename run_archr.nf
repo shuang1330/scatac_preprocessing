@@ -2,8 +2,8 @@
 nextflow.enable.dsl = 2
 
 
-params.rpath = "/software/isg/languages/R/4.4.0/exec/bin/Rscript"
-params.sample_list_path = "atac_names.txt"
+// params.rpath = "/software/isg/languages/R/4.4.0/exec/bin/Rscript"
+params.sample_list_path = "./data/snapatac2_files.csv"
 
 process archr_per_sample {
 
@@ -19,7 +19,7 @@ process archr_per_sample {
 
     script:
     """
-    ${params.rpath} ${workflow.projectDir}/scripts/archr_process.R ${workflow.projectDir}/data/fragment_files/${samplename}/fragments.tsv.gz ${samplename}
+    Rscript ${workflow.projectDir}/scripts/archr_process.R ${workflow.projectDir}/data/fragment_files/${samplename}/fragments.tsv.gz ${samplename}
     """
 }
 
@@ -29,6 +29,6 @@ workflow {
                         .map { it.trim() }
                         .filter { it }
                         .view { "Process ${it}" }
-                        // | archr_per_sample
+                        | archr_per_sample
 
 }
